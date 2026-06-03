@@ -135,6 +135,7 @@ body, html {
     display: block;
     width: 100%;
     height: 120px;
+    transform: scaleY(-1);
 }
 
 .sky-wave { top: 44%; transform: translateY(-99%); }
