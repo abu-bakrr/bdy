@@ -1,44 +1,80 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85)}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 24.0px 'Apple Color Emoji'; font-kerning: none}
-    span.s3 {font: 12.0px 'Apple Color Emoji'; font-kerning: none}
-    span.s4 {font: 18.0px 'Apple Color Emoji'; font-kerning: none}
-    span.s5 {font-kerning: none; background-color: #b3b3b3}
-    span.s6 {font: 11.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #b3b3b3}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>С Днем Рождения, Саида!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p class="p1"><span class="s1"></span><br></p>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>С Днем Рождения! </b></span><span class="s2">🎂</span></h1>
-<p class="p3"><span class="s1">Чтобы найти свой подарок, придется спуститься на твой уровень...</span></p>
-<p class="p4"><span class="s3">⬇️</span><span class="s1"> Скролль вниз </span><span class="s3">⬇️</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Куда-куда?! </b></span><span class="s4">😂</span></h2>
-<p class="p3"><span class="s1">Хм, это подарок явно не для тебя, лоли </span><span class="s3">😅</span></p>
-<p class="p3"><span class="s1">Он висит на уровне нормальных людей, а ты ещё крутись вниз — где-то там, между кустами и цветочками, твой ждёт! </span><span class="s3">🌸👇</span></p>
-<p class="p6"><span class="s5">Окей, ищу ниже </span><span class="s6">😤⬇️</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>О, ты всё-таки дошла! </b></span><span class="s4">🎉</span></h2>
-<p class="p3"><span class="s1">Ну что, поздравляю, лоли! Ты добралась до своего уровня — и это уже достижение года! </span><span class="s3">🏅</span></p>
-<p class="p3"><span class="s1">Серьёзно, Саида, ты уникальная. Таких маленьких, но таких громких людей ещё поискать надо </span><span class="s3">😄</span><span class="s1"> Весь мир слышит тебя, хоть и видит не сразу — надо приглядеться пониже.</span></p>
-<p class="p3"><span class="s1">Пусть этот год будет таким же заряженным, как ты сама. Пусть всё задуманное сбывается, и никакой холодильник не смотрит на тебя свысока! </span><span class="s3">🧊✊</span></p>
-<p class="p3"><span class="s1">С днём рождения!</span></p>
-<p class="p6"><span class="s5">Спасибо, закрываю! </span><span class="s6">🎊</span></p>
+
+    <!-- Стартовый экран -->
+    <div id="start-screen">
+        <div class="stars"></div>
+        <h1>С Днем Рождения! 🎂</h1>
+        <p>Чтобы найти свой подарок, придется спуститься на твой уровень...</p>
+        <div class="scroll-arrow">⬇️ Скролль вниз ⬇️</div>
+    </div>
+
+    <!-- Контейнер ростомера -->
+    <div id="ruler-container">
+        
+        <!-- Фоновые зоны -->
+        <div class="bg-zone space-zone"></div>
+        
+        <!-- Волна Космос -> Небо -->
+        <div class="wave-transition sky-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#5bbce4"></path>
+            </svg>
+        </div>
+        
+        <div class="bg-zone sky-zone"></div>
+        
+        <!-- Волна Небо -> Земля -->
+        <div class="wave-transition earth-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V0H1200V120C1132.19,118.92,1055.71,111.31,985.66,92.83Z" fill="#66bb6a"></path>
+            </svg>
+        </div>
+
+        <div class="bg-zone earth-zone"></div>
+
+        <!-- Сама линия -->
+        <div id="ruler"></div>
+        
+        <!-- Сюда JS будет добавлять отметки (тики) и объекты -->
+    </div>
+
+    <!-- Модальное окно для фейкового подарка (175 см) -->
+    <div id="fake-modal" class="hidden">
+        <div class="modal-content">
+            <h2>Куда-куда?! 😂</h2>
+            <div class="long-text">
+                <p>Хм, это подарок явно не для тебя, лоли 😅</p>
+                <p>Он висит на уровне нормальных людей, а ты ещё крутись вниз — где-то там, между кустами и цветочками, твой ждёт! 🌸👇</p>
+            </div>
+            <button id="close-fake-modal">Окей, ищу ниже 😤⬇️</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно для настоящего подарка (156 см) -->
+    <div id="modal" class="hidden">
+        <div class="modal-content">
+            <h2>О, ты всё-таки дошла! 🎉</h2>
+            <div class="long-text">
+                <p>Ну что, поздравляю, лоли! Ты добралась до своего уровня — и это уже достижение года! 🏅</p>
+                <p>Серьёзно, Саида, ты уникальная. Таких маленьких, но таких громких людей ещё поискать надо 😄 Весь мир слышит тебя, хоть и видит не сразу — надо приглядеться пониже.</p>
+                <p>Пусть этот год будет таким же заряженным, как ты сама. Пусть всё задуманное сбывается, и никакой холодильник не смотрит на тебя свысока! 🧊✊</p>
+                <p>С днём рождения! (Это с любовью, если что 😅)</p>
+            </div>
+            <button id="close-modal">Спасибо, закрываю! 🎊</button>
+        </div>
+    </div>
+
+    <!-- Библиотека для конфетти -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
